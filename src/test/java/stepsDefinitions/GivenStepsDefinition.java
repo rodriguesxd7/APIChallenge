@@ -25,4 +25,9 @@ public class GivenStepsDefinition {
         System.out.println("Iniciando a execucao da API");
     }
 
+    @Dado("que vou excluir um funcionario da base")
+    public void que_vou_excluir_um_funcionario_da_base() {
+        System.out.println("Iniciando a execucao da API");
+    }
+
 }

@@ -3,6 +3,7 @@ package stepsDefinitions;
 import Statments.AlterDataEmployee;
 import Statments.ConsultEmployee;
 import Statments.CreateEmployee;
+import Statments.DeleteEmployee;
 import io.cucumber.java.pt.Quando;
 
 import java.io.IOException;
@@ -22,6 +23,11 @@ public class WhenStepsDefinitions {
     @Quando("envio o dados para alteracao")
     public void envio_o_dados_para_alteracao() throws IOException {
         new AlterDataEmployee().consultEmployeeToAlterData();
+    }
+
+    @Quando("envio os dados para exclusao")
+    public void envio_os_dados_para_exclusao() throws IOException {
+        new DeleteEmployee().consultEmployeeCreated();
     }
 
 }

@@ -71,4 +71,23 @@ public class RequestsJson {
         DataController.getData().put("ALTER_EMPLOYEE", response);
     }
 
+    public void deleteEmployee(String id) throws IOException {
+        try {
+            response = RestAssured
+                    .given()
+                    .contentType("application/json")
+                    .when()
+                    .put(uri + "delete/" + id)
+                    .then()
+                    .statusCode(200)
+                    .body("status", is("success"))
+                    .extract()
+                    .response().getBody().asString();
+        } catch (AssertionError e) {
+            System.out.println("Ocorreu uma excecao: " + e + " ao executar o delete");
+        }
+
+        DataController.getData().put("DELETE_EMPLOYEE", response);
+    }
+
 }
