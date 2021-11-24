@@ -30,4 +30,9 @@ public class GivenStepsDefinition {
         System.out.println("Iniciando a execucao da API");
     }
 
+    @Dado("que vou consultar um funcionario ja cadastrado")
+    public void que_vou_consultar_um_funcionario_ja_cadastrado() {
+        System.out.println("Iniciando a execucao da API");
+    }
+
 }

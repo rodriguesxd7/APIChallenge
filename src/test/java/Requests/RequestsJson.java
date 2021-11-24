@@ -58,7 +58,7 @@ public class RequestsJson {
                     .contentType("application/json")
                     .body(obj.toString())
                     .when()
-                    .put(uri + "employee/" + id)
+                    .put(uri + "update/" + id)
                     .then()
                     .statusCode(200)
                     .body("status", is("success"))

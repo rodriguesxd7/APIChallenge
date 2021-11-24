@@ -30,5 +30,11 @@ public class ThenStepsDefinitions {
     public void sistema_retorna_mensagem_de_exlcusao_efetuada_com_sucesso() {
         new DeleteEmployee().getResponseDeleteFields();
     }
+
+    @Entao("o servico deve retornar os dados desse funcionario")
+    public void o_servico_deve_retornar_os_dados_desse_funcionario() {
+        new ConsultEmployee().getResponseConsultMainFields();
+        new ConsultEmployee().getResponseConsultSubFieldsData();
+    }
 }
 

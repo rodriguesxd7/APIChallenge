@@ -30,4 +30,9 @@ public class WhenStepsDefinitions {
         new DeleteEmployee().consultEmployeeCreated();
     }
 
+    @Quando("enviar a requisicao com o id")
+    public void enviar_a_requisicao_com_o_id() throws IOException {
+        new ConsultEmployee().consultAleatoryEmployee();
+    }
+
 }

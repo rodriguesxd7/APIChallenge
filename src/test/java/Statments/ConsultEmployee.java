@@ -17,6 +17,10 @@ public class ConsultEmployee {
         request.consultEmployee(id);
     }
 
+    public void consultAleatoryEmployee() throws IOException {
+        request.consultEmployee("2");
+    }
+
     public void getResponseConsultMainFields() {
         String fields[] = {"status", "data", "message"};
         JSONObject obj = new JSONObject(DataController.getData().get("CONSULT_EMPLOYEE"));

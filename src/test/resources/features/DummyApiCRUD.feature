@@ -1,7 +1,7 @@
 #language: pt
 
 @challenge
-Funcionalidade: Validação dos metodos do MS restapiexample
+Funcionalidade: Validação dos metodos do MS DummyAPI
 
   @create
   Cenario: Criação de funcionário
@@ -26,3 +26,9 @@ Funcionalidade: Validação dos metodos do MS restapiexample
     Dado que vou excluir um funcionario da base
     Quando envio os dados para exclusao
     Entao sistema retorna mensagem de exlcusao efetuada com sucesso
+
+  @aleatoryConsult
+    Cenario: Consultar funcionario aleatorio
+    Dado que vou consultar um funcionario ja cadastrado
+    Quando enviar a requisicao com o id
+    Entao o servico deve retornar os dados desse funcionario
