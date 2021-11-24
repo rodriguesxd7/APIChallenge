@@ -14,7 +14,7 @@ public class ConsultEmployee {
         JsonPath res = new JsonPath(DataController.getData().get("CREATE_EMPLOYEE"));
         String id = res.getJsonObject("data.id").toString();
 
-        request.consultClient(id);
+        request.consultEmployee(id);
     }
 
     public void getResponseConsultMainFields() {

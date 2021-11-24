@@ -17,7 +17,7 @@ public class CreateEmployee {
         obj.put("salary", "10000");
         obj.put("age", "30");
 
-        request.sendPost(obj);
+        request.createEmployee(obj);
     }
 
     public void getResponsePostMainFields() {
